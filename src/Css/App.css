@@ -529,6 +529,10 @@ h1 {
     flex-direction: column;
   }
 }
+.copy-right {
+  color: #fff;
+}
+
 .btn {
   padding: 8px 20px;
   border-radius: 2px;

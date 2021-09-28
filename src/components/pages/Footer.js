@@ -112,6 +112,9 @@ const Footer = () => {
           </div>
         </div>
       </section>
+      <div className="copy-right">
+        <p>Copyright 2021 &copy; Ali Eslam</p>
+      </div>
     </div>
   );
 };
