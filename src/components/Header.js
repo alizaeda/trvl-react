@@ -4,7 +4,7 @@ import Button from "./Button";
 const Header = () => {
   return (
     <header className="header-container">
-      <video src="./videos/video-1.mp4" autoPlay loop muted />
+      {/* <video src="./videos/video-1.mp4" autoPlay loop muted /> */}
       <h1>ADVENTURE AWAITS</h1>
       <p>What are you waiting for?</p>
       <div className="header-btns">

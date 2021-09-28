@@ -1,13 +1,18 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import Button from "./Button";
+import LoadingBar from "react-top-loading-bar";
 
-function Navbar() {
+const Navbar = () => {
+  const ref = useRef(null);
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
   const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
+  const closeMobileMenu = () => {
+    setClick(false);
+    ref.current.complete();
+  };
 
   const showButton = () => {
     if (window.innerWidth <= 960) {
@@ -25,6 +30,7 @@ function Navbar() {
 
   return (
     <>
+      <LoadingBar color="#f11946" ref={ref} />
       <nav className="navbar">
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
@@ -74,6 +80,6 @@ function Navbar() {
       </nav>
     </>
   );
-}
+};
 
 export default Navbar;
