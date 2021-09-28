@@ -15,17 +15,17 @@ const App = () => {
   return (
     <>
       <Router>
-        <Navbar />
         <ScrollToTop>
+          <Navbar />
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/products" component={Products} />
             <Route path="/services" component={Services} />
             <Route path="/sign-up" component={SignUp} />
           </Switch>
+          <Card />
+          <Footer />
         </ScrollToTop>
-        <Card />
-        <Footer />
       </Router>
     </>
   );
