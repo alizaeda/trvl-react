@@ -113,7 +113,7 @@ const Footer = () => {
       </section>
       <div className="copy-right">
         <p>
-          Copyright 2021 &copy;{" "}
+          Coded By &copy;{" "}
           <a style={{ color: "#FFF" }} href="https://github.com/alizaeda">
             Ali Eslam
           </a>
