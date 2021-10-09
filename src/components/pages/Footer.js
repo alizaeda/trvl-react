@@ -67,7 +67,6 @@ const Footer = () => {
               <i className="fab fa-typo3" />
             </Link>
           </div>
-          <small className="website-rights">TRVL © 2020</small>
           <div className="social-icons">
             <Link
               className="social-icon-link facebook"
@@ -113,7 +112,12 @@ const Footer = () => {
         </div>
       </section>
       <div className="copy-right">
-        <p>Copyright 2021 &copy; Ali Eslam</p>
+        <p>
+          Copyright 2021 &copy;{" "}
+          <a style={{ color: "#FFF" }} href="https://github.com/alizaeda">
+            Ali Eslam
+          </a>
+        </p>
       </div>
     </div>
   );
